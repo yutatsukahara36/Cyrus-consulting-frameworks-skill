@@ -1,11 +1,11 @@
 ---
 name: consulting-frameworks
-description: Apply structured consulting and operations frameworks to analyze any business, operations, or systemic problem. Use this skill whenever the user wants to analyze a problem using frameworks like Root Cause Analysis (RCA/Fishbone), SIPOC, Bullseye, Triple Constraints, Tradeoff Analysis, or System Map. Also trigger when users say things like 'help me break down this problem', 'analyze this system', 'what's causing this issue', 'map this process', 'identify root causes', 'what are the tradeoffs', 'who are the stakeholders', 'what's broken in this system', or any request to systematically diagnose a business or operational challenge. Trigger even if users don't name a specific framework — if they describe a messy problem and want structured analysis, this skill applies.
+description: Apply structured consulting and operations frameworks to analyze any business, operations, or systemic problem. Use this skill whenever the user wants to analyze a problem using frameworks like Strategy, Triple Constraints, Tradeoff Analysis, Root Cause Analysis (RCA/Fishbone), SIPOC, Bullseye, or System Map. Also trigger when users say things like 'help me break down this problem', 'analyze this system', 'what's causing this issue', 'map this process', 'identify root causes', 'what are the tradeoffs', 'who are the stakeholders', 'what's broken in this system', or any request to systematically diagnose a business or operational challenge. Trigger even if users don't name a specific framework — if they describe a messy problem and want structured analysis, this skill applies.
 ---
 
 # Consulting Frameworks Skill
 
-This skill guides structured problem analysis using six proven consulting frameworks. The goal is to produce comprehensive, data-backed analysis that a user can then use to build visual deliverables (slides, diagrams, maps).
+This skill guides structured problem analysis using seven proven consulting frameworks. The goal is to produce comprehensive, data-backed analysis that a user can then use to build visual deliverables (slides, diagrams, maps).
 
 ## Critical Rules
 
@@ -34,37 +34,49 @@ When a user presents a problem, first establish:
 
 Ask the user to confirm or refine the problem statement before proceeding.
 
-### Phase 2: Framework Selection
+### Phase 2: Mandatory Entry Frameworks
 
-Based on the problem, recommend which frameworks to apply and in what order. Here is the recommended sequencing:
+After the problem statement is confirmed, ALWAYS execute these four frameworks in order. These are not optional — they establish the strategic context and scope that every deeper analysis depends on:
 
-**To determine SCOPE, use:**
-- Triple Constraints (who/what is involved)
-- Tradeoff Analysis (what tensions exist)
+1. **Strategy** → `strategy.md` — Analyze the current strategic positioning (unique position, tailored activities, trade-offs, improvement continuity)
+2. **Triple Constraints** → `triple-constraints.md` — Scope all People (60%), Process (20%), and Technology (20%) involved
+3. **Tradeoff Analysis** → `tradeoff.md` — Name the Speed vs. Cost vs. Quality tensions and what's being sacrificed
 
-**To determine PAIN of the current system, use:**
-- RCA / Fishbone (why is it broken)
-- Bullseye (where does actual diverge from desired)
-- SIPOC (what does the process chain look like)
+These three frameworks are ALWAYS required regardless of the problem or context.
 
-**To understand SYSTEMIC DYNAMICS, use:**
-- System Map (how do forces interact across the ecosystem)
+### Phase 3: Deep-Dive Framework Selection
 
-Ask the user which frameworks they want, or recommend a subset based on their problem. If they want all six, sequence them in the order above.
+After the entry frameworks are complete, recommend which additional frameworks would add value based on the problem. Ask the user which ones they want to run. Once the user selects, **execute all selected frameworks immediately** — do not stop or ask again.
 
-### Phase 3: Framework Execution
+Available deep-dive frameworks:
+
+- **RCA / Fishbone** → `rca.md` — Why is it broken? Deep causal analysis across domains
+- **Bullseye** → `bullseye.md` — Where does actual diverge from desired at each organizational layer?
+- **SIPOC** → `sipoc.md` — What does the full process chain look like end-to-end?
+- **System Map** → `system-map.md` — How do systemic forces (Drivers, Mainstay, Enablers) interact?
+
+Recommend based on the problem:
+- If the user needs to understand WHY something is failing → RCA
+- If the user needs to see structural misalignment → Bullseye
+- If the user needs to map a specific process → SIPOC
+- If the user needs to understand ecosystem-level dynamics → System Map
+
+After the user picks, run every selected framework and then proceed to Cross-Framework Synthesis.
+
+### Phase 4: Framework Execution
 
 For each framework, read the corresponding reference file before generating output:
+- Strategy → `strategy.md`
+- Triple Constraints → `triple-constraints.md`
+- Tradeoff → `tradeoff.md`
 - RCA → `rca.md`
 - SIPOC → `sipoc.md`
 - Bullseye → `bullseye.md`
-- Triple Constraints → `triple-constraints.md`
-- Tradeoff → `tradeoff.md`
 - System Map → `system-map.md`
 
 Each reference file contains the framework structure, what to include, how to organize it, and what questions to ask the user if information is missing.
 
-### Phase 4: Output Format
+### Phase 5: Output Format
 
 For each framework, produce:
 
@@ -75,7 +87,7 @@ For each framework, produce:
 
 Do NOT generate visualizations. The output is comprehensive written analysis that serves as the content layer for the user's own visual work.
 
-### Phase 5: Cross-Framework Synthesis
+### Phase 6: Cross-Framework Synthesis
 
 After completing all requested frameworks, provide a brief synthesis:
 - What patterns appear across multiple frameworks?
