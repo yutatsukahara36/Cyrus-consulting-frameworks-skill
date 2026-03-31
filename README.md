@@ -1,6 +1,7 @@
 # Consulting Frameworks Skill for Claude AI
 
-A structured problem-analysis skill for Claude that applies six proven consulting frameworks to any business, operations, or systemic challenge. Built to turn messy, complex problems into clear, data-backed analysis.
+A structured problem-analysis skillset deeply inspired by Cyrus Aram from MGT 120. Created by and for Cyrus culprits!!!!!!!!!!!
+This is for Claude that applies six proven consulting frameworks to any business, operations, or systemic challenge. Built to turn messy, complex problems into clear, data-backed analysis.
 
 ---
 
