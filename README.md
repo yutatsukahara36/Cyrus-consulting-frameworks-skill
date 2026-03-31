@@ -7,7 +7,7 @@ This is for Claude that applies six proven consulting frameworks to any business
 
 ## Credit & Origin
 
-**These frameworks were taught by [Cyrus Aram](https://www.linkedin.com/in/cyrusaram/), Chief Executive Officer at [Unleashing Leaders, Inc.](https://unleashingleaders.com/) and Professor of MGT 120 (Project Management & Consulting) at UC Davis.**
+**These frameworks were taught by [Cyrus Aram]([https://www.linkedin.com/in/cyrusaram/](https://www.linkedin.com/in/cyrus-aram-688b1437/)), Chief Executive Officer at [Unleashing Leaders, Inc.]([https://unleashingleaders.com/](https://www.linkedin.com/company/unleashingleaders/)) and Professor of MGT 120 (Project Management & Consulting) at UC Davis.**
 
 Professor Aram's course is one of the most impactful business classes offered at UC Davis — a hands-on, practitioner-driven approach to consulting and systems thinking that bridges academic rigor with real-world application. The frameworks in this skill are direct translations of his curriculum into a repeatable AI workflow.
 
