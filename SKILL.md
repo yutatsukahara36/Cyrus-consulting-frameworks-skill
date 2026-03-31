@@ -55,12 +55,12 @@ Ask the user which frameworks they want, or recommend a subset based on their pr
 ### Phase 3: Framework Execution
 
 For each framework, read the corresponding reference file before generating output:
-- RCA → `references/rca.md`
-- SIPOC → `references/sipoc.md`
-- Bullseye → `references/bullseye.md`
-- Triple Constraints → `references/triple-constraints.md`
-- Tradeoff → `references/tradeoff.md`
-- System Map → `references/system-map.md`
+- RCA → `rca.md`
+- SIPOC → `sipoc.md`
+- Bullseye → `bullseye.md`
+- Triple Constraints → `triple-constraints.md`
+- Tradeoff → `tradeoff.md`
+- System Map → `system-map.md`
 
 Each reference file contains the framework structure, what to include, how to organize it, and what questions to ask the user if information is missing.
 
